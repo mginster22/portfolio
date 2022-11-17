@@ -54,11 +54,17 @@ const Header = ({ theme, switchTheme }) => {
             </ul>
             <div className={styles.social}>
               {theme === "light" ? (
-                <AiFillInstagram size="30px" />
+                <a href="https://www.instagram.com/korochanskiiy22/">
+                  <AiFillInstagram size="30px" />
+                </a>
               ) : (
-                <AiOutlineInstagram size="30px" />
+                <a href="https://www.instagram.com/korochanskiiy22/">
+                  <AiOutlineInstagram size="30px" />
+                </a>
               )}
-              <BsGithub size="26px" />
+              <a href="https://github.com/mginster22">
+                <BsGithub size="26px" />
+              </a>
             </div>
           </div>
           <div className={styles.switcher}>
@@ -67,7 +73,6 @@ const Header = ({ theme, switchTheme }) => {
               <span className={switcher}></span>
             </label>
           </div>
-         
         </div>
       </div>
     </header>
