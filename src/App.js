@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import { Routes, Route } from "react-router-dom";
+import { useTheme } from "./hooks/use-theme";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
-function App() {
+const App = () => {
+  const [theme, toogleTheme] = useTheme("light");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header theme={theme} switchTheme={toogleTheme} />
+      <Main >
+        <Routes>
+          <Route path="/" element={<Home theme={theme}/>} />
+          <Route path="/contact" element={<Contact theme={theme}/>} />
+        </Routes>
+      </Main>
+    </>
   );
-}
+};
 
 export default App;
