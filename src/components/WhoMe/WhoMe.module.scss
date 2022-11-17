@@ -1,4 +1,5 @@
-@import '../../common/style/templates';
+@import "../../common/style/templates";
+@import "../../common/style/colors";
 .who_me {
   display: flex;
   flex-direction: column;
@@ -15,13 +16,31 @@
     @extend %font-family;
     font-weight: bold;
     margin-left: 50px;
-  
   }
 }
 .who_me_light {
   background-image: url("../../assets/images/bg-dark.png");
 }
-
+.link {
+  display: block;
+  position: absolute;
+  bottom: 24%;
+  z-index: 999999;
+  border: 1px solid $color-sub-main;
+  max-width: 200px;
+  width: 100%;
+  padding: 15px;
+  @extend %font-family;
+  text-align: center;
+  color: $color-sub-main;
+  box-shadow: 1px 0px 8px 3px rgba(0, 0, 0, 0.47);
+  transition: all 300ms ease;
+  &:hover {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+}
 .scrol_text_left,
 .scrol_text_right {
   position: absolute;
@@ -29,8 +48,7 @@
   align-items: center;
   gap: 5px;
   writing-mode: vertical-lr;
-  bottom:-60px;
-
+  bottom: -60px;
 }
 .scrol_text_left {
   left: 10px;
@@ -39,29 +57,15 @@
   right: 10px;
 }
 
-@media screen and (max-width:'768px') {
-  .who_me{
-    background-image:url('../../assets/images/bg-light-768.png');
+@media screen and (max-width: "768px") {
+  .who_me {
+    background-image: url("../../assets/images/bg-light-768.png");
     background-position: center;
   }
-  .who_me_light{
-  background-image: url("../../assets/images/bg-dark-768.png");
-
+  .who_me_light {
+    background-image: url("../../assets/images/bg-dark-768.png");
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .focus_in_contract {
   -webkit-animation: focus_in_contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -96,36 +100,36 @@
 }
 
 .text_pop_up_top {
-	-webkit-animation: text_pop_up_top 1s infinite alternate-reverse ;
-	        animation:text_pop_up_top 1s infinite alternate-reverse ;
+  -webkit-animation: text_pop_up_top 1s infinite alternate-reverse;
+  animation: text_pop_up_top 1s infinite alternate-reverse;
 }
 @-webkit-keyframes text_pop_up_top {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     text-shadow: none;
   }
   100% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
 }
 @keyframes text_pop_up_top {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     text-shadow: none;
   }
   100% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
 }

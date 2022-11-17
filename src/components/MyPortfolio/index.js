@@ -4,7 +4,6 @@ import Card from "../Card/Index";
 import greensit from "../../assets/images/greensite.png";
 import bike from "../../assets/images/bike.png";
 import squad from "../../assets/images/squad.png";
-import { Link } from "react-router-dom";
 import { FaArrowUp } from "react-icons/fa";
 import styles from "./MyPortfolio.module.scss";
 
@@ -29,9 +28,7 @@ const MyPortfolio = ({ theme }) => {
         <Card src={bike} href={data[1]} />
         <Card src={squad} href={data[2]} />
       </div>
-      <Link to="/contact" className={styles.link}>
-        Contact
-      </Link>
+     
       <a className={styles.scroll_arrow_up} href="#home">
         <FaArrowUp size="20px" />
       </a>

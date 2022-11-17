@@ -67,23 +67,7 @@
 .card:hover .button_view {
   opacity: 1;
 }
-.link{
-  display: block;
-  margin-top: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.636);
-  max-width: 200px;
-  width: 100%;
-  padding: 15px;
-  @extend %font-family;
-  text-align: center;
-  box-shadow: 1px 0px 8px 3px rgba(0, 0, 0, 0.47);
-  transition: all 400ms ease-in-out;
-  &:hover{
-    background-color:black;
-    color:white;
-  }
 
-}
 .scroll_arrow_up {
   position: fixed;
   right: 10px;

@@ -7,7 +7,24 @@ import { BsGithub } from "react-icons/bs";
 import cx from "classnames";
 import styles from "./Header.module.scss";
 
-const data = ["About", "My skills", "Work", "Contact"];
+const data = [
+  {
+    title: "About",
+    to: "/about",
+  },
+  {
+    title: "My skills",
+    to: "/mySkills",
+  },
+  {
+    title: "Work",
+    to: "/work",
+  },
+  {
+    title: "Contact",
+    to: "/contact",
+  },
+];
 
 const Header = ({ theme, switchTheme }) => {
   const switcher = cx(styles.slider, styles.round);
@@ -29,9 +46,9 @@ const Header = ({ theme, switchTheme }) => {
             </Link>
 
             <ul className={styles.list}>
-              {data.map((link, index) => (
+              {data.map(({ to, title }, index) => (
                 <li key={index} className={styles.list_item}>
-                  <Link to="/">{link}</Link>
+                  <Link to={to}>{title}</Link>
                 </li>
               ))}
             </ul>
@@ -50,6 +67,7 @@ const Header = ({ theme, switchTheme }) => {
               <span className={switcher}></span>
             </label>
           </div>
+         
         </div>
       </div>
     </header>

@@ -1,6 +1,7 @@
 import React from "react";
 import cx from "classnames";
 import ScrollDown from "../ScrollDown";
+import { Link } from "react-router-dom";
 import styles from "./WhoMe.module.scss";
 const WhoMe = ({ theme }) => {
   const whoMeEl = cx(styles.who_me, {
@@ -15,6 +16,9 @@ const WhoMe = ({ theme }) => {
         <br />
         I&#8217;m Vlad,<span>frontend-developer</span>
       </h1>
+      <Link to="/contact" className={styles.link}>
+        Contact
+      </Link>
       <ScrollDown className={scrollLeft} />
       <ScrollDown className={scrollRight} />
     </section>
