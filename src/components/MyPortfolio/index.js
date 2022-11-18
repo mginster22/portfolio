@@ -4,6 +4,7 @@ import Card from "../Card/Index";
 import greensit from "../../assets/images/greensite.png";
 import bike from "../../assets/images/bike.png";
 import squad from "../../assets/images/squad.png";
+import todo from "../../assets/images/todo.png";
 import { FaArrowUp } from "react-icons/fa";
 import styles from "./MyPortfolio.module.scss";
 
@@ -12,6 +13,7 @@ const MyPortfolio = ({ theme }) => {
     "https://github.com/mginster22/GreenSite",
     "https://github.com/mginster22/LandingBike",
     "https://github.com/mginster22/pagesqdlhepl",
+    "https://github.com/mginster22/fd-todolist-project",
   ];
   const portfolioTheme = cx(styles.portfolio, {
     [styles.portfolio_dark]: theme === "dark",
@@ -27,6 +29,7 @@ const MyPortfolio = ({ theme }) => {
         <Card src={greensit} href={data[0]} />
         <Card src={bike} href={data[1]} />
         <Card src={squad} href={data[2]} />
+        <Card src={todo} href={data[3]} />
       </div>
      
       <a className={styles.scroll_arrow_up} href="#home">

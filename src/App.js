@@ -6,6 +6,7 @@ import { useTheme } from "./hooks/use-theme";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import AboutPage from "./pages/About";
+import SkillsPage from './pages/Skills';
 
 const App = () => {
   const [theme, toogleTheme] = useTheme("light");
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<Home theme={theme}/>} />
           <Route path="/contact" element={<Contact theme={theme}/>} />
           <Route path="/about" element={<AboutPage theme={theme}/>} />
+          <Route path="/mySkills" element={<SkillsPage theme={theme}/>} />
         </Routes>
       </Main>
     </>
