@@ -10,8 +10,8 @@
   background-image: url("../../assets/images/blog-dark.png");
 }
 .wrapper_acardion {
-  transform: translateY(280px);
   display: flex;
+  padding-top: 290px;
   flex-direction: column;
   gap: 10px;
 }
@@ -52,20 +52,24 @@
   }
 }
 @media screen and (max-width:'768px'){
+  .wrapper_acardion{
+    padding-top: 200px;
+  }
   .blog{
     background-size:contain;
   }
   .blog_card{
     margin-left: 20px;
   }
-  .wrapper_acardion{
-    transform: translateY(140px);
-  }
+  
 }
 @media screen and (max-width:'420px'){
+  .blog{
+    margin-top: -120px;
+  }
   .wrapper_acardion{
+    padding-top: 100px;
     max-width: 370px;
-    transform: translateY(100px);
     margin-left: -20px;
   }
   .blog_card{

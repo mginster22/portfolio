@@ -5,12 +5,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  padding-top: 300px;
 }
 .quiz_dark {
   background-image: url("../../assets/images/quiz-black.png");
 }
 .wrapper_quiz {
-  transform: translateY(320px);
   max-width: 600px;
   border: 1px solid black;
   width: 100%;
@@ -81,15 +81,19 @@
 @media screen and (max-width:'768px'){
   .quiz{
     background-size:contain;
+    margin-top: -200px;
   }
   .wrapper_quiz{
-    transform: translateY(140px);
+    margin-top: -90px;
   }
+  
 }
 @media screen and (max-width:'420px'){
+  .quiz{
+    margin-top: -220px;
+  }
   .wrapper_quiz{
-    transform: translateY(100px);
-    margin-top: -150px;
     max-width: 360px;
+    margin-top: -160px;
   }
 }
