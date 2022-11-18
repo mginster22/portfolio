@@ -165,12 +165,27 @@
       }
       .list_item:nth-child(1) {
         padding-top: 0;
-        border-top:none;
+        border-top: none;
       }
-      
     }
-    .social{
+    .social {
       margin-top: 0;
+    }
+  }
+}
+@media screen and (max-width: "420px") {
+  .menu {
+    height: 100px;
+    .logo{
+     max-width: 90px;
+    }
+    .list{
+      font-size: 13px;
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap:0;
     }
   }
 }

@@ -56,9 +56,9 @@
 .scrol_text_right {
   right: 10px;
 }
-@media screen and (max-width:'1024px') {
-  .who_me{
-    h1{
+@media screen and (max-width: "1024px") {
+  .who_me {
+    h1 {
       font-size: 3rem;
     }
   }
@@ -67,12 +67,25 @@
 @media screen and (max-width: "768px") {
   .who_me {
     background-image: url("../../assets/images/bg-light-768.png");
-    background-position: center;
+    background-position: top left;
+    h1 {
+      margin-left: 0;
+    }
   }
   .who_me_light {
     background-image: url("../../assets/images/bg-dark-768.png");
   }
+
+  .link {
+    bottom: 44%;
+  }
+  .scrol_text_left,
+  .scrol_text_right {
+    bottom:50px;
+  }
 }
+
+
 
 .focus_in_contract {
   -webkit-animation: focus_in_contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)

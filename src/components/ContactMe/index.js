@@ -23,16 +23,23 @@ function sendEmail(e) {
     );
 }
 
-const ContactMe = ({ theme }) => {
+const ContactMe = ({ theme,className }) => {
   const contactMe = cx(styles.contact_me, {
     [styles.contact_me_black]: theme === "dark",
+    [styles.contact_me_420]:className,
   });
+  const title =cx(styles.title,{
+    [styles.title_420]:className
+  })
+  const form = cx(styles.form,{
+    [styles.form_420]:className
+  })
   const mainField = cx(styles.info_main_item, styles.field);
 
   return (
     <section className={contactMe}>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <div className={styles.title}>
+        <div className={title}>
           <h2>Contact me</h2>
           <p>
             I want to start working in a good company and develop as a person,
@@ -46,7 +53,7 @@ const ContactMe = ({ theme }) => {
             info: "",
           }}
         >
-          <Form onSubmit={sendEmail} className={styles.form}>
+          <Form onSubmit={sendEmail} className={form}>
             <label className={styles.info_main}>
               <Field name="name" placeholder="Name" className={mainField} />
               <Field name="email" placeholder="Email" className={mainField} />

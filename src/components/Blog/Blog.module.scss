@@ -41,7 +41,7 @@
   opacity: 1;
   overflow: visible;
   min-height: 60px;
-  max-height: 200px;
+  max-height: 300px;
   height: 100%;
   transition: all 400ms ease-in-out;
 }
@@ -49,5 +49,31 @@
   .blog_card{
     max-width: 650px;
     margin-left: 40px;
+  }
+}
+@media screen and (max-width:'768px'){
+  .blog{
+    background-size:contain;
+  }
+  .blog_card{
+    margin-left: 20px;
+  }
+  .wrapper_acardion{
+    transform: translateY(140px);
+  }
+}
+@media screen and (max-width:'420px'){
+  .wrapper_acardion{
+    max-width: 370px;
+    transform: translateY(100px);
+    margin-left: -20px;
+  }
+  .blog_card{
+    h2{
+      font-size: 1.2rem;
+    }
+  }
+  .text_answer{
+    font-size: 16px;
   }
 }

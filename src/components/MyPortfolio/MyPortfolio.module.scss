@@ -89,4 +89,26 @@
   .card{
     max-width: 300px;
   }
+  .portfolio{
+    margin-top: 0;
+    background-position: top right ;
+  }
+  .title{
+    padding-top: 0;
+  }
+}
+@media screen and (max-width:'420px'){
+  .title{
+    font-size: 3rem;
+  }
+  .title +P{
+    font-size: 1.2rem;
+  }
+  .card{
+    height: 150px;
+
+    .button_view{
+      left: 13%;
+    }
+  }
 }
