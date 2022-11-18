@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import blogData from "../../assets/dataJson/blog.json";
 import cx from "classnames";
-import styles from "./Blog.module.scss";
 import BlogCard from "./BlogCard";
+import styles from "./Blog.module.scss";
+
 const Blog = ({ theme }) => {
   const data = blogData.map((data) => data);
   const [reply, setReply] = useState(data[0].question);

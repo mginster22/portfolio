@@ -16,7 +16,7 @@ const App = () => {
       <Header theme={theme} switchTheme={toogleTheme} />
       <Main >
         <Routes>
-          <Route path="/" element={<Home theme={theme}/>} />
+          <Route path="/" element={<Home theme={theme} toogleTheme={toogleTheme}/>} />
           <Route path="/contact" element={<Contact theme={theme}/>} />
           <Route path="/about" element={<AboutPage theme={theme}/>} />
           <Route path="/mySkills" element={<SkillsPage theme={theme}/>} />

@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    a{
+    a {
       cursor: pointer;
     }
   }
@@ -138,5 +138,39 @@
 
   .slider.round:before {
     border-radius: 50%;
+  }
+}
+@media screen and (max-width: "768px") {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    padding: 0 10px;
+    bottom: 0;
+    .logo {
+      max-width: 110px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0;
+      .list_item {
+        padding: 0;
+        border: none;
+      }
+      .list_item:nth-child(1) {
+        padding-top: 0;
+        border-top:none;
+      }
+      
+    }
+    .social{
+      margin-top: 0;
+    }
   }
 }

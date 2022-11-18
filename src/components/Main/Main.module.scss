@@ -4,3 +4,8 @@
   margin: 0 auto;
   padding-left: 200px;
 }
+@media screen and (max-width: "768px") {
+  .container {
+    padding-left: 30px;
+  }
+}

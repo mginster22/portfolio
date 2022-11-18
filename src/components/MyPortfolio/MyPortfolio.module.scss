@@ -82,3 +82,11 @@
     background-color: rgba(128, 128, 128, 0.467);
   }
 }
+@media screen and (max-width:'768px'){
+  .list{
+    margin-left: 40px;
+  }
+  .card{
+    max-width: 300px;
+  }
+}

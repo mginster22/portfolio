@@ -45,3 +45,9 @@
   height: 100%;
   transition: all 400ms ease-in-out;
 }
+@media screen and (max-width:'1024px'){
+  .blog_card{
+    max-width: 650px;
+    margin-left: 40px;
+  }
+}

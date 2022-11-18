@@ -56,6 +56,13 @@
 .scrol_text_right {
   right: 10px;
 }
+@media screen and (max-width:'1024px') {
+  .who_me{
+    h1{
+      font-size: 3rem;
+    }
+  }
+}
 
 @media screen and (max-width: "768px") {
   .who_me {

@@ -5,7 +5,7 @@ import questions from "../../assets/dataJson/quiz.json";
 import Result from "./Result";
 import styles from "./Quiz.module.scss";
 
-const Quiz = ({ theme }) => {
+const Quiz = ({ theme ,toogleTheme}) => {
   const [step, setStep] = useState(0);
   const [correct, setCorrect] = useState(0);
   const question = questions[step];
@@ -21,7 +21,7 @@ const Quiz = ({ theme }) => {
     [styles.quiz_dark]: theme === "dark",
   });
   return (
-    <section className={quiz} id="quiz">
+    <section className={quiz} >
       {step !== questions.length  ? (
         <Game
           step={step}
@@ -29,11 +29,13 @@ const Quiz = ({ theme }) => {
           question={question}
           questions={questions}
           onClickVarianst={onClickVarianst}
+          theme={theme}
         />
       ) : (
         <Result
           questions={questions}
           correct={correct}
+          theme={theme}
         />
       )}
     </section>
