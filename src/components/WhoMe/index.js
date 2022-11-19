@@ -10,7 +10,7 @@ const WhoMe = ({ theme }) => {
   const scrollLeft = cx(styles.scrol_text_left, styles.text_pop_up_top);
   const scrollRight = cx(styles.scrol_text_right, styles.text_pop_up_top);
   return (
-    <section className={whoMeEl}>
+    <section className={whoMeEl} id="who">
       <h1 className={styles.focus_in_contract}>
         Hi,
         <br />

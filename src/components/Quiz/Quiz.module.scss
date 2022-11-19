@@ -4,7 +4,8 @@
   background-image: url("../../assets/images/quiz-light.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  max-height: 100vh;
+  height: 100%;
   padding-top: 300px;
 }
 .quiz_dark {
@@ -81,16 +82,17 @@
 @media screen and (max-width:'768px'){
   .quiz{
     background-size:contain;
-    margin-top: -200px;
+padding-right: 20px;    
   }
   .wrapper_quiz{
-    margin-top: -90px;
+margin-top: -40px;
   }
   
 }
 @media screen and (max-width:'420px'){
   .quiz{
-    margin-top: -220px;
+    margin-top: 40px;
+    padding-right: 20px;
   }
   .wrapper_quiz{
     max-width: 360px;

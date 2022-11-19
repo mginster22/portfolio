@@ -4,7 +4,8 @@
   background-image: url("../../assets/images/blog-light.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  max-height: 100vh;
+  height: 100%;
 }
 .blog_dark {
   background-image: url("../../assets/images/blog-dark.png");
@@ -65,8 +66,9 @@
 }
 @media screen and (max-width:'420px'){
   .blog{
-    margin-top: -120px;
+  margin-top: 120px;
   }
+
   .wrapper_acardion{
     padding-top: 100px;
     max-width: 370px;

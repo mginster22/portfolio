@@ -9,7 +9,7 @@
   background-image:url('../../assets/images/bg-black-big.png');
 }
 .wrapper{
-  transform: translateY(150px);
+  padding: 140px 0;
   h2{
     font-size: 5rem;
     @extend %font-family;

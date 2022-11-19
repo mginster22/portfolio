@@ -4,7 +4,8 @@
   background-image: url("../../assets/images/bg-light-big.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  max-height: 100vh;
+  height: 100%;
   margin-top: 50px;
 }
 .portfolio_dark {
@@ -31,7 +32,9 @@
 .card {
   max-width: 400px;
   position: relative;
-  height: 230px;
+  min-height: 230px;
+  max-height: 230px;
+  height: 100%;
   transition: all 0.5s ease;
   .button_view {
     position: absolute;
@@ -82,38 +85,52 @@
     background-color: rgba(128, 128, 128, 0.467);
   }
 }
-@media screen and (max-width:'1024px'){
-  .card{
+@media screen and (max-width: "1024px") {
+  .card {
     max-width: 300px;
   }
 }
-@media screen and (max-width:'768px'){
-  .list{
+@media screen and (max-width: "768px") {
+  .list {
     margin-left: 40px;
   }
-  .card{
+  .card {
     max-width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+    width: 100%;
   }
-  .portfolio{
+  .portfolio {
     margin-top: 0;
-    background-position: top right ;
+    background-position: top right;
   }
-  .title{
+  .title {
     padding-top: 0;
   }
 }
-@media screen and (max-width:'420px'){
-  .title{
+@media screen and (max-width: "420px") {
+  .title {
     font-size: 3rem;
   }
-  .title +P{
+  .title + P {
     font-size: 1.2rem;
   }
-  .card{
-    height: 150px;
+  .list {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+  .card {
+    max-width: 360px;
+    min-height: 150px;
+    max-height: 150px;
+    width: 100%;
 
-    .button_view{
+    .button_view {
       left: 13%;
     }
+  }
+  .scroll_arrow_up {
+    bottom: 130px;
+    padding: 5px 5px;
   }
 }
